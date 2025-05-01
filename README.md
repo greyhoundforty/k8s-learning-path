@@ -1,20 +1,5 @@
-# Kubernetes on IBM Cloud Guide
+# Kubernetes Learning Path
 
-A comprehensive learning path for Kubernetes on IBM Cloud using MkDocs.
+My attempt at a relatively comprehensive learning path for Kubernetes.
 
 ## Getting Started
-
-1. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. Run the development server:
-   ```bash
-   mkdocs serve
-   ```
-
-3. Build the documentation site:
-   ```bash
-   mkdocs build
-   ```
