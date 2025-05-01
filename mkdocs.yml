@@ -51,8 +51,8 @@ plugins:
   - search
   - minify:
       minify_html: true
-#  - git-revision-date-localized:
-#      type: date
+  - git-revision-date-localized:
+      type: date
 
 nav:
   - Home: index.md
