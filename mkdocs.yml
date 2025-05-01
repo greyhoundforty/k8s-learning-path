@@ -1,0 +1,87 @@
+site_name: Kubernetes Learning Path
+site_description: Comprehensive learning path for Kubernetes
+site_author: Ryan Tiffant
+site_url: https://greyhoundforty.github.io//k8s-learning-path
+
+repo_name: greyhoundforty/k8s-learning-path
+repo_url: https://github.com/greyhoundforty/k8s-learning-path
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: light blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - content.code.annotate
+  logo: images/logos/kubernetes-logo.png
+  favicon: images/logos/kubernetes-logo.png
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+#  - git-revision-date-localized:
+#      type: date
+
+nav:
+  - Home: index.md
+  - "Session 1: Background and Getting Started":
+      - Overview: session1-background/index.md
+      - Kubernetes History: session1-background/kubernetes-history.md
+      - Adoption Trends and Use Cases: session1-background/adoption-trends.md
+      - Alternatives: session1-background/alternatives.md
+  - "Session 2: Architecture and Components":
+      - Overview: session2-architecture/index.md
+      - Kubernetes Architecture: session2-architecture/kubernetes-architecture.md
+      - Control Plane: session2-architecture/control-plane.md
+      - Worker Nodes: session2-architecture/worker-nodes.md
+      - etcd: session2-architecture/etcd.md
+      - kubelet: session2-architecture/kubelet.md
+      - kube-proxy: session2-architecture/kube-proxy.md
+      - Cloud Controller Manager: session2-architecture/cloud-controller-manager.md
+      - "Lab: Exploring Cluster": session2-architecture/lab-architecture.md
+  - "Session 3: Core Kubernetes Resources":
+      - Overview: session3-core-resources/index.md
+      - Namespaces: session3-core-resources/namespaces.md
+      - Pods: session3-core-resources/pods.md
+      - Deployments: session3-core-resources/deployments.md
+      - Labels and Selectors: session3-core-resources/labels-and-selectors.md
+      - "Lab: Core Resources": session3-core-resources/lab-core-resources.md
+  - "Session 4: Application Management":
+      - Overview: session4-application-management/index.md
+      - ReplicaSets: session4-application-management/replicasets.md
+      - StatefulSets: session4-application-management/statefulsets.md
+      - DaemonSets: session4-application-management/daemonsets.md
+      - Jobs and CronJobs: session4-application-management/jobs-and-cronjobs.md
+      - "Lab: Application Management": session4-application-management/lab-application-management.md
